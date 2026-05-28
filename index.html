@@ -11,7 +11,7 @@ body { background: #0a0a0a; color: #fff; font-family: 'Space Mono', monospace; o
 .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; opacity: 0.03; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
 
 .hero { position: relative; height: 100vh; min-height: 600px; display: flex; flex-direction: column; justify-content: flex-end; padding-top: 60px; padding-left: 60px; padding-right: 60px; padding-bottom: 160px; overflow: hidden; }
-.hero-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 15%; opacity: 1; filter: brightness(1.15); background: #0a0a0a; }
+.hero-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center center; opacity: 1; filter: brightness(1.15); background: #0a0a0a; }
 .hero-gradient { position: absolute; top: 0; left: 0; width: 55%; height: 100%; background: linear-gradient(to right, #0a0a0a 5%, rgba(10,10,10,0.7) 35%, transparent 100%); }
 .hero-blue { position: absolute; top: 0; right: 0; width: 40%; height: 6px; background: #1400FF; }
 .hero-blue2 { position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: #1400FF; }
